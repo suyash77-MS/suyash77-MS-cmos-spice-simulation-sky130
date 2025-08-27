@@ -97,4 +97,5 @@ run
 plot v(in) v(out)
 .endc
 .end
+[CMOS Spice Simulations project (1).pdf](https://github.com/user-attachments/files/22001121/CMOS.Spice.Simulations.project.1.pdf)
 
