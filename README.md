@@ -212,7 +212,7 @@ Full Form: Metal Oxide Semiconductor Field Effect Transistor
 Why it is called Field Effect Transistor?
 Indirection MOSFET, of the the current current flow. that flows between Drain (D) and Source (S) terminals is controlled by an electric field which is perpendicular to the
 
-```
+
 ● This perpendicular control is why it is called a Field Effect Transistor (FET).
 ● The Gate (G) terminal is separated from the channel by a perfect insulating layer (SiO₂), hence no current (negligible) flows through the
 gate terminal.
