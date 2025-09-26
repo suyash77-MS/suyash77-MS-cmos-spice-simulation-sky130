@@ -157,7 +157,7 @@ suppliesnot used. on In thethe inverterdevice variation, were observed the impac
 ● Using Bash/Make automation for large-scale SPICE sweeps.
 ● Integrating SPICE-verified designs into OpenLane/VSDFlow for digital implementation.
 ● Applying learned concepts to create silicon-ready, low-power, robust designs.
-```
+
 
 ## INDEX
 
@@ -216,7 +216,7 @@ Indirection MOSFET, of the the current current flow. that flows between Drain (D
 ● This perpendicular control is why it is called a Field Effect Transistor (FET).
 ● The Gate (G) terminal is separated from the channel by a perfect insulating layer (SiO₂), hence no current (negligible) flows through the
 gate terminal.
-```
+
 #### Regions (Modes) of Operation
 
 ### 1.Enhancement MOSFET:
@@ -233,7 +233,7 @@ gate terminal.
 ```
 Condition:Where: VGS < 0 (for n-MOS)
 ```
-```
+
 𝑉𝐺𝑆=𝑉𝐺−𝑉𝑆
 Explanation:
 ● Gate connected to negative voltage ⇒ negative charges develop on the metallic gate plate.
@@ -245,7 +245,7 @@ o Negative charge on Gate plate.
 o Positive charge (holes) on semiconductor plate.
 Capacitance in accumulation mode:
 𝐶𝑀𝑂𝑆=ε𝑜𝑡𝑥𝑜·𝑥𝐴, 𝐴=𝑊·𝐿
-```
+
 Equilibrium:When fully charged, (^)
 𝑄−(𝐺𝑎𝑡𝑒)=𝑄+(𝑆𝐶−𝑝𝑙𝑎𝑡𝑒)
 𝑄=𝐶𝑀𝑂𝑆·𝑉𝐺𝑆
@@ -255,7 +255,7 @@ If VDS > 0:
 𝐼𝐷𝑆= 0 𝑓𝑜𝑟 𝑎𝑛𝑦 𝑎𝑝𝑝𝑙𝑖𝑒𝑑 𝑉𝐷𝑆
 
 
-```
+
 For n-type MOSFET:
 𝑉𝐺𝑆< 0 ⇒ 𝐴𝑐𝑐𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑀𝑜𝑑𝑒, 𝐼𝐷𝑆= 0
 
@@ -263,7 +263,7 @@ For n-type MOSFET:
 
 ### 2. Depletion Mode
 
-```
+
 Condition: VGS > 0 (small positive voltage, below threshold)
 Explanation:
 ● Positive charges develop on the Gate plate.
@@ -292,7 +292,7 @@ If VDS > 0:
 𝐼𝐷𝑆≈ 0
 Thus,
 𝑉𝐺𝑆 𝑖𝑛 𝑑𝑒𝑝𝑙𝑒𝑡𝑖𝑜𝑛 𝑚𝑜𝑑𝑒: 𝐶𝑀𝑂𝑆=𝐶𝐶𝑜𝑜𝑥𝑥+·𝐶𝐶𝑑𝑑𝑒𝑒𝑝𝑝, 𝐼𝐷𝑆≈ 0
-```
+
 **Depletion Mode of Operation**
 
 <img width="701" height="307" alt="image" src="https://github.com/user-attachments/assets/64790714-9c23-49c8-bb00-16b6540af0e0" />
@@ -359,7 +359,7 @@ Body Diodes and Reverse Bias
 <img width="452" height="565" alt="image" src="https://github.com/user-attachments/assets/3183fdff-1fff-417e-904e-8185d23b5599" />
 
 ● Thedrain local than potentialnear the source.along the channel decreases from the drain toward the source (VD > VB > VC > VS), so reverse bias is greater near the
-```
+
 Depletion Penetration and Channel Shape
 ● Due to stronger reverse bias near the drain, depletion extends more into the n-type inversion layer near the drain than near the source,
 making the channel cross-section taper: thicker near source, thinner near drain.
@@ -378,11 +378,11 @@ Beyond Pinch-Off
 
 #### Conclusion from all Modes
 
-```
+
 ● VGS<0 → Accumulation mode → IDS=0 for any applied VDS
 ● VGS<Vth → Depletion mode → IDS=0 for any applied VDS
 ● VGS>Vthdrain to source, → Inversion increasing mode; with for VDS 0<VDS<(VGS−Vth), (triode region) a conductive channel (inversion layer) forms between D and S and IDS flows from
-```
+
 **Triode Region (Linear Region) Behavior:**
 ● Condition: VGS>Vth and 0<VDS<(VGS−Vth)
 
@@ -402,7 +402,7 @@ Practical Notes on Entering Saturation
 
 ### Characteristics of N channel MOSFET and GRAPHS:
 
-```
+
 Drain Characteristics (IDS vs VDS at constant VGS):
 ● Example threshold noted: Vth=0.75V
 ● Regions:
@@ -413,17 +413,16 @@ o For VGS>Vth:
 ● Qualitativepinch-off plots show increasing IDS curves for higher VGS, with linear-like behavior at very small VDS and saturation plateaus beyond
 ● Inconstant), triode regionbut the and slope for depends very small on VGS; VDS, hence IDS–VDS the device is approximatelybehaves as a VVR linear (voltage-variable with nearly constant resistor) conductance (i.e., resistance roughly
 Formulas emphasized in this context:
-```
 
-```
+
+
 ● IDS ≈ Kn·2(VGS−Vth)·VDS for very small VDS (linear approximation)
 ● VVR interpretation: VDS = R(VGS)·IDS, where R varies with VGS
 
 <img width="646" height="612" alt="image" src="https://github.com/user-attachments/assets/5eb135a8-9b08-46c1-83b1-a94d69b487c3" />
 
-```
 Drain Characteristics of MOSFET
-```
+
 **Transfer Characteristics (IDS vs VGS at constant VDS, with device in saturation)**
 
 <img width="372" height="458" alt="image" src="https://github.com/user-attachments/assets/bab399b1-b96b-485d-863e-b9d4a2e97576" />
@@ -433,14 +432,14 @@ Drain Characteristics of MOSFET
 ● Indicates how effectively input voltage VGS controls output current IDS
 
 
-```
+
 ● AtIDS smaller changes VGS (just above Vth), changes in VGS produce relatively small IDS changes; at higher VGS, small VGS changes produce large
-```
-```
+
+
 Transconductance:
 ● gm = ∂IDS/∂VGS in saturation = 2·Kn·(VGS−Vth)
 ● This gm expression is valid in saturation region
-```
+
 **Key Parameters and Notation**
 ● μn: mobility of electrons
 ● Cox: oxide capacitance per unit area (= εox/tox)
@@ -507,7 +506,7 @@ Capacitance references:
 pMOS conduction (using pMOS-friendly variables):
 
 
-```
+
 ● ON condition: VSG > |VTP|
 ● TriodeISD = Kp(linear) [2(VSG region: + VTP)·VSD 0 < VSD < − (VSG VSD²] + VTP)
 ● Saturation:ISD(sat) = KpVSD [VSG ≥ (VSG + VTP]² + VTP)
@@ -515,7 +514,7 @@ pMOS conduction (using pMOS-friendly variables):
 Notes:
 ● DrainVDS ↔characteristics VSD, (VGS ISD–VSD− Vth) ↔ (VSGmirror +nMOS VTP) with variable substitutions:
 ● Transfer characteristic in saturation (ISD vs VSG at sufficiently large VSD):
-```
+
 ISDThis =is Kp a mirror [VSG image+ VTP]² of nMOS= Kp [−VGS transfer + characteristics.VTP]² (^)
 pMOS region conditions summary:
 ● OFF: VSG < |VTP| ⇒ ISD = 0 (no inversion)
@@ -530,7 +529,7 @@ Sign conventions reminder:
 
 ### Quick Equation Box:
 
-```
+
 ● nMOS triode: IDS = Kn [2(VGS − Vth)·VDS − VDS²]
 ● nMOS saturation: IDS = Kn (VGS − Vth)²
 ● nMOS gm:
@@ -541,7 +540,7 @@ o Saturation: gm = 2Kn(VGS − Vth) = 2√(Kn·IDS)
 ● pMOS gm:
 o Triode: gm = 2Kp·VSD
 o Saturation: gm = 2Kp(VSG + VTP) = 2√(Kp·ISD)
-```
+
 
 ### 2. Depletion MOSFET Basics
 
@@ -578,14 +577,14 @@ o VGS < 0 → Enhancement mode
 
 ### Enhancement vs Depletion MOSFET:
 
-```
+
 ● Enhancement type: Normally OFF at VGS = 0 (needs inversion to conduct).
 ● Depletion type: Normally ON at VGS = 0 (already has channel).
 ● n‑type enhancement: Vth > 0
 ● n‑type depletion: Vth < 0
 ● p‑type enhancement: Vth < 0
 ● p‑type depletion: Vth > 0
-```
+
 2. MOSFET Symbol Representation
 
 <img width="535" height="476" alt="image" src="https://github.com/user-attachments/assets/eb51c946-33c2-4cbf-9235-ccebbd2d5958" />
@@ -622,27 +621,26 @@ p‑Depletion +ve ON Depletion & Enhancement
 1. Channel Length Modulation
     ● InIf weSaturation increase Region:
 
-```
+
 𝑉𝐷𝑆>(𝑉𝐺𝑆−𝑉𝑡ℎ)
 the zero‑point (where channel thickness → 0) shifts toward the Source terminal, thus the effective channel length decreases.
 ● This decrease in effective channel length with increase in VDS (above 𝑉𝐺𝑆−𝑉𝑡ℎ) is called Channel Length Modulation.
-```
+
 Ideal vs Practical
 ● Ideal assumption: In saturation, for 𝑉𝐷𝑆>(𝑉𝐺𝑆−𝑉𝑡ℎ), 𝐼𝐷𝑆 stays constant.
 ● Practical: With increase in VDS above (𝑉𝐺𝑆−𝑉𝑡ℎ), 𝐼𝐷𝑆 increases slightly → drain characteristics have slope in saturation instead of flat.
 
-```
 Equations:
 ● Ideal saturation current:
-```
+
 
 ###### 𝐼𝐷𝑆𝑜=𝐾𝑛 [𝑉𝐺𝑆−𝑉𝑡ℎ]^2
 
-```
+
 ● With channel length modulation:
 𝐼𝐷𝑆=𝐼𝐷𝑆𝑜 [ 1 +λ ∆𝑉𝐷𝑆]
 where:
-```
+
 λ∆ (^) 𝑉= channel length modulation parameter (V⁻¹, very small in long-channel MOSFETs)
 𝐷𝑆=𝑉𝐷𝑆−(𝑉𝐺𝑆−𝑉𝑡ℎ)
 Output Resistance
@@ -698,19 +696,19 @@ Graph: √IDS vs VGS
 Equation (ideal strong inversion):
 𝐼𝐷𝑆= 𝐾𝑛 (𝑉𝐺𝑆−𝑉𝑡ℎ)
 
-```
+
 Cause: Weak inversion region – small diffusion current between source/drain even when 𝑉𝐺𝑆<𝑉𝑡ℎ.
 ● Off‑state current increases slightly due to channel length modulation.
-```
+
 
 ## Key Points Recap:
 
-```
+
 ● Channel Length Modulation ⇒ IDS slope in saturation, finite ro, gm depends slightly on VDS.
 ● Body Effect ⇒ higher Vth when VSB > 0.
 ● Threshold Voltage Dependence ⇒ affected by 𝑡𝑜𝑥, doping 𝑁𝑠, temperature T.
 ● Subthreshold Conduction ⇒ small IDS for VGS < Vth (off‑state current).
-```
+
 
 ### Introduction SPICE:
 
@@ -1231,25 +1229,25 @@ A CMOS inverter is a robust device because the shape of its input versus output 
 
 CMOSKey factors inverter include: robustness refers to its ability to operate correctly under **real-world variations and disturbances** without producing logic errors.
 
-```
+
 ● Noise Margins (NMH/NML) – Measure tolerance to unwanted voltage noise at logic levels.
 ● PVT Variations – Process, Voltage, and Temperature changes can shift switching thresholds and delay.
 ● Glitch Immunity – Ability to reject short transient pulses on the input.
 ● Load Variations – Stable operation despite changes in capacitive or resistive loading.
 ● Supply Scaling – Maintaining functionality when VDD changes, especially for low-power design.
-```
+
 Ain robustlarge digital inverter systems. maintains correct logic levels, adequate noise margins, and predictable timing **across all operating conditions** , ensuring reliability
 
 ## 2.Switching Threshold (Vm)
 
 The **switching threshold** of a CMOS inverter is the **input voltage** at which the inverter’s **output voltage equals its input voltage**.
 
-```
+
 ● At Vm , both the PMOS and NMOS transistors conduct significant current.
 ● It’s the point where the inverter transitions from output HIGH to output LOW.
 ● Ideally, Vm is set near VDD/2 for balanced noise margins and symmetrical switching speed.
 ● In the VTC (Voltage Transfer Characteristic) curve, it’s the midpoint of the steep transition region.
-```
+
 **Formula** For matched **:** (^) NMOS/PMOS parameters:
 Vm≈VDD2V_m \approx \frac{V_{DD}}{2}Vm ≈2VDD
 but in real designs, Vm is influenced by **W/L ratios** , threshold voltages (Vt), and mobility differences between electrons and holes.
@@ -1336,12 +1334,12 @@ Ron(PMOS) ~ 2.5*Ron(NMOS)
 
 Noiselogic levels. margin robustness is the CMOS inverter’s **ability to tolerate unwanted voltage noise** on its input without misinterpreting
 
-```
+
 ● NMH (Noise Margin High) → Max noise voltage a HIGH input can withstand before being seen as LOW.
 ● NML (Noise Margin Low) → Max noise voltage a LOW input can withstand before being seen as HIGH.
 ● Larger NMH/NML = more robust against interference, supply ripple, and crosstalk.
 ● Achieved by balancing switching threshold and designing for steep VTC slope.
-```
+
 Static Behavior Evaluation - CMOS Inverter Robustness: Noise Margin
 
 The ideal and actual Input-Output characteristics of an inverter were observed
@@ -1478,12 +1476,12 @@ Therefore, we get NMh = 0.736177 and NMl = 0.655856
 
 ## 4.CMOS Power supply:
 
-```
+
 ● Power-Supply Variations (VDD changes)
 ○ Fluctuations in supply voltage (e.g., from 1.8 V down to 0.6 V in low-power designs).
 ○ Can affect switching threshold, noise margins, delay, and power consumption.
 ○ A robust design ensures functionality across the expected VDD range.
-```
+
 Wheneverat 1V sometime we move back, from now 250nm they will nodes be operatingto lower nodes at 0.7V like 20nm or so on, we scale our supply voltage as well. For example, if things were working
 
 A CMOS inverter can be operated at 0.5V as well and it has it's own advantages and disadvantages:
