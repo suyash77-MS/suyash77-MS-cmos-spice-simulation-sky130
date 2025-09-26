@@ -155,47 +155,41 @@ suppliesnot used. on In thethe inverterdevice variation, were observed the impac
 ● Applying learned concepts to create silicon-ready, low-power, robust designs.
 ```
 
-## INDEX:
+## INDEX
 
-#### 1. Basics of MOSFET
+1. [Basics of MOSFET](#basics-of-mosfet)
 
-#### 2. Modes of Operation:
+2. [Modes of Operation](#modes-of-operation)
+   - [Accumulation Mode](#accumulation-mode)
+   - [Depletion Mode](#depletion-mode)
+   - [Inversion Mode](#inversion-mode)
 
-#### o Accumulation Mode
+3. [Transfer characteristics in triode and saturation regions](#transfer-characteristics-in-triode-and-saturation-regions)
 
-#### o Depletion Mode
+4. [Transconductance gm in triode vs saturation](#transconductance-gm-in-triode-vs-saturation)
 
-#### o Inversion Mode
+5. [Region conditions recap](#region-conditions-recap)
 
-#### 3. Transfer characteristics in triode and saturation regions
+6. [p-type enhancement MOSFET: modes, equations, characteristics](#p-type-enhancement-mosfet-modes-equations-characteristics)
 
-#### 4. Transconductance gm in triode vs saturation
+7. [Non-Ideal Effects of MOSFET](#non-ideal-effects-of-mosfet)
+   - [Channel Length Modulation](#channel-length-modulation)
+   - [Body Effect](#body-effect)
+   - [Effects on Threshold Voltage](#effects-on-threshold-voltage)
+   - [Subthreshold Conduction](#subthreshold-conduction)
 
-#### 5. Region conditions recap
+8. [Introduction To SPICE Simulations](#introduction-to-spice-simulations)
 
-#### 6. p-type enhancement MOSFET: modes, equations, characteristics
+9. [Velocity Saturation & Basics of CMOS Inverter](#velocity-saturation--basics-of-cmos-inverter)
 
-#### 7. Non-Ideal Effects of MOSFET:
+10. [CMOS Voltage Transfer Characteristics](#cmos-voltage-transfer-characteristics)
 
-#### o Channel Length Modulation
+11. [Static Behavior Evaluation of CMOS](#static-behavior-evaluation-of-cmos)
 
-#### o Body Effect
+12. [Conclusion](#conclusion)
 
-#### o Effects on Threshold Voltage
+13. [References](#references)
 
-#### o Subthreshold Conduction
-
-#### 8.Introduction To SPICE Simulations
-
-#### 9.Velocity Saturation & Basics of CMOS Inverter
-
-#### 10.CMOS Voltage Transfer Characteristics
-
-#### 11.Static Behavior Evaluation of CMOS
-
-#### 12.Conclusion
-
-#### 13.References
 
 
 
