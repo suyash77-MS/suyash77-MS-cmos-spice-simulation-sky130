@@ -97,15 +97,18 @@ run
 plot v(in) v(out)
 .endc
 .end
-[CMOS Spice Simulations project (1).pdf](https://github.com/user-attachments/files/22001121/CMOS.Spice.Simulations.project.1.pdf)
+
+
 
 # CMOS Circuit Design and SPICE Simulation
 
 # using SKY130 Technology Workshop
 
+<img width="852" height="283" alt="image" src="https://github.com/user-attachments/assets/34517a33-4962-4101-9855-6d3bdde5034d" />
+
 #### Brief Description of the course:
 
-Thisthe workshopis focused is towards divided CMOS across circuitthe five design days andin aSPICE smart simulationway which using allows SKY130 the learner technology to grasp organized all the by concepts VLSI System if the Design. workshop The is content attended of
+This the workshop is focused is towards divided CMOS across circuitthe five design days andin aSPICE smart simulationway which using allows SKY130 the learner technology to grasp organized all the by concepts VLSI System if the Design. workshop The is content attended of
 dedicatedly. On the first day of the workshop the emphasis was on the basics of NMOS Drain current (Id), Drain-to-source Voltage (Vds) and the
 
 plotand betweenVgs and (^) thethe twoplot offor them. determining The second the value day focuses of Vt. The primarily third was on velocityconcentrated saturation on CMOS and basics switching of CMOS threshold inverter and VTCdynamic and simulations,the plots between where Id a (^)
@@ -128,6 +131,7 @@ suppliesnot used. on In thethe inverterdevice variation, were observed the impac
     ○ Sizing PMOS/NMOS pairs
     ○ Generating VTC plots
     ○ Optimizing switching threshold and rise/fall delays
+
 2. Noise-Margin & Delay Analysis of an Inverter Chain
 
 
@@ -191,11 +195,10 @@ suppliesnot used. on In thethe inverterdevice variation, were observed the impac
 13. [References](#references)
 
 
-
-
 ### MOSFET
 
-```
+<img width="511" height="298" alt="image" src="https://github.com/user-attachments/assets/da4ec0f5-bd33-4bb2-a778-b925be7f3e4a" />
+
 Full Form: Metal Oxide Semiconductor Field Effect Transistor
 ● S: Source
 ● D: Drain
@@ -205,7 +208,7 @@ Full Form: Metal Oxide Semiconductor Field Effect Transistor
 ● W: Channel width
 ● tₒₓ: Oxide thickness
 ● SiO₂ acts as a perfect insulator
-```
+
 Why it is called Field Effect Transistor?
 Indirection MOSFET, of the the current current flow. that flows between Drain (D) and Source (S) terminals is controlled by an electric field which is perpendicular to the
 
@@ -224,6 +227,8 @@ gate terminal.
 
 
 **1. Accumulation Mode**
+
+<img width="507" height="456" alt="image" src="https://github.com/user-attachments/assets/0d65be1b-0ab8-4463-8d89-29aaee9bf350" />
 
 ```
 Condition:Where: VGS < 0 (for n-MOS)
@@ -253,7 +258,9 @@ If VDS > 0:
 ```
 For n-type MOSFET:
 𝑉𝐺𝑆< 0 ⇒ 𝐴𝑐𝑐𝑢𝑚𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑀𝑜𝑑𝑒, 𝐼𝐷𝑆= 0
-```
+
+<img width="790" height="571" alt="image" src="https://github.com/user-attachments/assets/71998a63-90b1-481d-949e-ffdc5b2442a0" />
+
 ### 2. Depletion Mode
 
 ```
@@ -288,6 +295,8 @@ Thus,
 ```
 **Depletion Mode of Operation**
 
+<img width="701" height="307" alt="image" src="https://github.com/user-attachments/assets/64790714-9c23-49c8-bb00-16b6540af0e0" />
+
 Structure and Bias
 ● Considerchannel geometry an n-MOS W×L. structure with p-type substrate (Body B), n+ Source (S), n+ Drain (D), Gate (G) over oxide of thickness t_ox, and
 ● Apply a small positive gate bias: VGS > 0 (but below threshold Vth).
@@ -319,6 +328,9 @@ Minority Electron Attraction
 interface.[2][1]
 ● Thesignificant. continued[1][2] electron attraction accompanies depletion-region growth until a point where electron concentration at the surface becomes
 Threshold Voltage and Inversion Onset
+
+<img width="487" height="217" alt="image" src="https://github.com/user-attachments/assets/ccd2f14f-525f-40f7-8d92-adb884a329a0" />
+
 ● Atthat VGS electron = Vth, concentration depletion width at the reaches surface approximatelyequals the hole its concentration maximum, and in the a very p-type thin bulk inversion (strong layer inversion of electrons condition). forms at the interface such
 ● At VGS = Vth, the inversion layer thickness is extremely small, so its conductive cross-sectional area A → 0; channel resistance R ∝ 1/A
 → ∞; hence IDS tends to zero for any applied VDS at the exact threshold point.
@@ -326,6 +338,9 @@ Threshold Voltage and Inversion Onset
 
 
 ### 3. Inversion Mode (VGS > Vth):
+
+<img width="732" height="566" alt="image" src="https://github.com/user-attachments/assets/744d0a01-cc0f-4764-b7ec-d4f5a061903b" />
+
 
 Channel Formation and Capacitance
 ● For VGS > Vth, repelling additional holes becomes progressively harder, while attracting more electrons becomes easier; thus, the
@@ -341,7 +356,8 @@ Body Diodes and Reverse Bias
 ● Then-regions), p–n junctions causing (body-to-source depletion penetration and body-to-drain) into both p and are n sides.reverse-biased in normal operation (with body at 0V and positive potentials near
 
 
-```
+<img width="452" height="565" alt="image" src="https://github.com/user-attachments/assets/3183fdff-1fff-417e-904e-8185d23b5599" />
+
 ● Thedrain local than potentialnear the source.along the channel decreases from the drain toward the source (VD > VB > VC > VS), so reverse bias is greater near the
 ```
 Depletion Penetration and Channel Shape
@@ -402,11 +418,16 @@ Formulas emphasized in this context:
 ```
 ● IDS ≈ Kn·2(VGS−Vth)·VDS for very small VDS (linear approximation)
 ● VVR interpretation: VDS = R(VGS)·IDS, where R varies with VGS
-```
+
+<img width="646" height="612" alt="image" src="https://github.com/user-attachments/assets/5eb135a8-9b08-46c1-83b1-a94d69b487c3" />
+
 ```
 Drain Characteristics of MOSFET
 ```
 **Transfer Characteristics (IDS vs VGS at constant VDS, with device in saturation)**
+
+<img width="372" height="458" alt="image" src="https://github.com/user-attachments/assets/bab399b1-b96b-485d-863e-b9d4a2e97576" />
+
 ● Consider VDS sufficiently large so MOSFET remains in saturation across the sweep
 ● IDS–VGS curve is non-linear and parabolic in saturation according to IDS(sat) = Kn (VGS−Vth)²
 ● Indicates how effectively input voltage VGS controls output current IDS
@@ -436,6 +457,10 @@ Where Kn = μn·Cox·W/L, and Cox = εox/tox.
 
 
 **Transfer Characteristics in Triode Region (n-MOS):**
+
+<img width="398" height="463" alt="image" src="https://github.com/user-attachments/assets/ccda78de-4873-451e-bc91-a742d8d687e1" />
+
+
 ● Condition: VGS > Vth and 0 < VDS < (VGS − Vth)
 
 ● DrainIDS = current: Kn [2(VGS (^) − Vth)·VDS − VDS²]
@@ -461,6 +486,9 @@ Region conditions (n-MOS):
 ● Saturation: VDS ≥ VGS − Vth
 
 ### p-Type Enhancement MOSFET (pMOS, enhancement type):
+
+<img width="505" height="422" alt="image" src="https://github.com/user-attachments/assets/66453679-3c9a-4dba-98b9-f772c5469daa" />
+
 
 Convention used: body at reference; source at higher potential than drain; for pMOS, VSD > 0, VDS < 0; use VSG = −VGS ≥ 0.
 Modes:
@@ -517,6 +545,9 @@ o Saturation: gm = 2Kp(VSG + VTP) = 2√(Kp·ISD)
 
 ### 2. Depletion MOSFET Basics
 
+<img width="401" height="387" alt="image" src="https://github.com/user-attachments/assets/e8680fb2-3e01-43ce-bcce-28ab5d1b63ee" />
+
+
 n‑Type Depletion MOSFET
 ● n‑type channel exists even at VGS = 0 → current flows for VDS > 0.
 ● Applying −ve VGS repels electrons → channel width reduces (depletion).
@@ -556,6 +587,9 @@ o VGS < 0 → Enhancement mode
 ● p‑type depletion: Vth > 0
 ```
 2. MOSFET Symbol Representation
+
+<img width="535" height="476" alt="image" src="https://github.com/user-attachments/assets/eb51c946-33c2-4cbf-9235-ccebbd2d5958" />
+
     ● Arrow shows p–n junction direction between body and inversion layer.
     ● Symbol variations for:
        o n‑type enhancement
@@ -695,6 +729,9 @@ small‑signal parameters.
 behavior.
 ● Acceleratehardware design by simulating MOSFET choices and gate‑drive conditions to optimize efficiency and ensure safe operating area before
 (^) **CODE Diagram:**
+
+<img width="445" height="245" alt="image" src="https://github.com/user-attachments/assets/65ec258d-76b1-4ad1-a93c-568d4a7448c8" />
+
 The snap shot of SPICE netlist of the above NMOS
 R1 resistance is added as it is not desired that the current from Vin would be directly fed to the gate of M1.
 Definition of nodes and the method to identify them
@@ -752,6 +789,10 @@ Method to save SPICE model
 
 #### Method to write code for SPICE simulation
 
+<img width="842" height="316" alt="image" src="https://github.com/user-attachments/assets/2a49fc72-b39b-403d-9458-c44934944388" />
+
+<img width="548" height="293" alt="image" src="https://github.com/user-attachments/assets/ae65b98f-c828-42f6-b01d-89e38cb15810" />
+
 The snap shot of the terminal window of NGSPICE Simulation:
 
 
@@ -769,6 +810,9 @@ The snap shot of the terminal window of NGSPICE Simulation:
 operation.
 SPICEand higher simulation electric for fields lower and nodes the velocity and the saturationcharacteristics drain forcurrent long modelchannel were and alsoshort observed. channel devices were observed. The velocity saturation at lower
 MOSFET as a switch and the characteristics of the CMOS inverter were taught.
+
+<img width="622" height="280" alt="image" src="https://github.com/user-attachments/assets/e8893a8d-e1b1-4ff4-af05-9d8cbc69b00d" />
+
 The snap shot of various regions of operation of NMOS on graphs plotted between Ids and Vds.
 TheVgs=0V plot theoverlapping nmos is not with turned the 'x''ON' axis so, is there at Vgs=0V is no channel and that present. is because there is 0 drain current at that point of time and the reason is that when
 The theory about the cut-off region of NMOS.
@@ -784,6 +828,8 @@ Forjust thesaturates. lower Thisvalues point of the of saturationelectric field,
 Vn(m/S) = linear for ε<=εc
 
 Vn(m/S) = constant for ε>=εc
+
+<img width="560" height="341" alt="image" src="https://github.com/user-attachments/assets/acac7371-c102-45cb-a28a-a69afa662f94" />
 
 The snap shot of the graph of velocity saturation effect
 
@@ -865,6 +911,8 @@ setplot dc1
 
 Drain Characteristics of MOSFET on NGSPICE
 
+<img width="793" height="427" alt="image" src="https://github.com/user-attachments/assets/88948855-364a-4606-9033-a3d80639d074" />
+
 The snap shot of output window for plot between Ids and Vds for short channel device
 
 To observe the value of Id at any point on the curve, then left click on the point on the curve to be observed.
@@ -914,6 +962,9 @@ setplot dc1
 
 .end
 
+<img width="797" height="452" alt="image" src="https://github.com/user-attachments/assets/2639f899-2a4d-4172-a0e3-99c19c300bf5" />
+
+
 The snap shot of terminal window for plot between Ids and Vds for short channel device without the sweep for vdd
 
 Transfer Characteristics of MOSFET ON NGSPICE
@@ -959,6 +1010,8 @@ Defined terminologies in CMOS inverter
 
 Circuit Diagram of CMOS Inverter
 
+<img width="488" height="361" alt="image" src="https://github.com/user-attachments/assets/58fd50b8-db5f-478b-9a5f-fcbd22c11261" />
+
 
 **Derivation CMOS voltage transfer characteristics (VTC):**
 
@@ -975,9 +1028,18 @@ The snap shot of load curve for PMOS transistor in CMOS inverter
 
 Load curve for NMOS transistor in CMOS inverter
 
+<img width="793" height="482" alt="image" src="https://github.com/user-attachments/assets/87adafa5-3b7c-47c8-9d62-a871034dca12" />
+
 The snap shot of load curve for NMOS transistor in CMOS inverter
 
+<img width="423" height="202" alt="image" src="https://github.com/user-attachments/assets/d8cedbd7-3280-4a64-a912-c2c2dce9e4fc" />
+
+The snap shot of load curve for PMOS transistor in CMOS inverter
+
 Superimposing the load curve of NMOS on the load curve of PMOS and plotting Vin vs Vout from the graph obtained
+
+<img width="793" height="540" alt="image" src="https://github.com/user-attachments/assets/7dcacdd9-8d7f-495a-a4d8-5db3656beaa7" />
+
 
 The snap shot of superimposed load curve of NMOS and load curve of PMOS
 
@@ -993,6 +1055,8 @@ Component values
 Identification of 'nodes'
 
 Naming 'nodes'
+
+<img width="728" height="442" alt="image" src="https://github.com/user-attachments/assets/93b9029d-5b9f-4d05-bae4-49278ab9f1c8" />
 
 The snap shot of the SPICE netlist considered
 
@@ -1068,6 +1132,9 @@ display
 .end
 
 
+<img width="725" height="361" alt="image" src="https://github.com/user-attachments/assets/64d5299c-f434-448f-9af5-026825240305" />
+
+
 The snap shot of the terminal window for plotting the Vtc characteristics of CMOS inverter
 
 ### output window for plotting the Vtc characteristics of CMOS inverter on NGSPICE
@@ -1117,6 +1184,10 @@ run
 .endc
 
 .end
+
+
+<img width="790" height="426" alt="image" src="https://github.com/user-attachments/assets/bb5a8152-3c19-4e8c-a269-0c5492c71c47" />
+
 
 The snap shot of the terminal window for performing the transient analysis
 
@@ -1195,11 +1266,15 @@ IdsP = - IdsN which means that IdsP + IdsN = 0
 
 We know the equations for IdsN and IdsP which are as stated below:
 
+<img width="485" height="165" alt="image" src="https://github.com/user-attachments/assets/26b6e3c6-345a-4e74-b136-35af3450fb87" />
+
 We ignore the 1+λVds because the term is very small and it makes the equations very difficult for hand calculations.
 
 Since, IdsP + IdsN = 0
 
 Therefore, the equations can be re-written as:
+
+<img width="796" height="506" alt="image" src="https://github.com/user-attachments/assets/a99a6019-c628-4ac6-a11c-9293e479476c" />
 
 Here,
 
@@ -1271,6 +1346,10 @@ Static Behavior Evaluation - CMOS Inverter Robustness: Noise Margin
 
 The ideal and actual Input-Output characteristics of an inverter were observed
 
+<img width="490" height="271" alt="image" src="https://github.com/user-attachments/assets/4733e2a1-9f30-4222-970d-f7ce61908bbe" />
+
+<img width="483" height="272" alt="image" src="https://github.com/user-attachments/assets/05bd0370-9d5e-44cc-b985-a9a3edc1b464" />
+
 ### ideal Input-Output characteristics of an Inverter
 
 ### actual Input-Output characteristics of an Inverter with finite slope
@@ -1294,7 +1373,12 @@ Vol is Output Low Voltage (0 <= Vol < Vil)
 
 Any output voltage level between 0 and Vol will be treated as logic '0'
 
+
+<img width="551" height="241" alt="image" src="https://github.com/user-attachments/assets/22c80c09-0b7a-4560-b35d-933ade67eadc" />
+
 Actual Input-Output characteristics on an inverter were observed and they were plotted on a scale
+
+<img width="501" height="292" alt="image" src="https://github.com/user-attachments/assets/f14331bd-e864-4a5a-89ba-e68240046f06" />
 
 ### Actual Input-Output characteristics of an Inverter
 
@@ -1318,6 +1402,9 @@ therestatic ispoint. a drop - In at the the above NMl becausetable, NMl the isNM
 CMOS inverter robustness with respect to the Noise Margin. - Finally, the areas that can be used for digital and analog applications are stated in the
 figure below:
 **GRAPH Areas Fitted for digital and analog Designs:**
+
+<img width="576" height="502" alt="image" src="https://github.com/user-attachments/assets/bf61cbe0-6b5f-4727-b26f-563e962c3262" />
+
 Vout versus Vin curve showing the areas that can be used for digital and analog applications
 
 
@@ -1362,6 +1449,10 @@ display
 .endc
 
 .end
+
+
+<img width="547" height="300" alt="image" src="https://github.com/user-attachments/assets/ddc8bc27-f892-4da4-8dbd-dad454050420" />
+
 
 The snap shot of the output window for calculating the Noise Margins
 
@@ -1459,6 +1550,10 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 
 .end
 
+
+<img width="737" height="332" alt="image" src="https://github.com/user-attachments/assets/d48d63a7-a2b5-4cf9-bf30-68fa98caceaa" />
+
+
 ### The snap shot of the output window to observe the power supply variation
 
 To calculate the gain for the given plot:
@@ -1520,8 +1615,11 @@ Width identifies the overlap area between the diffusion layer and the poly-silic
 
 Fabrication is basically a lab where we have a lot of things like chemicals, water, gases, etc. running and due to these the ideal structure is distorted.
 
+<img width="337" height="328" alt="image" src="https://github.com/user-attachments/assets/9317d749-7650-4273-bbf8-c596c96761d4" />
+
 . The snap shot of the inverter chain
 
+<img width="801" height="367" alt="image" src="https://github.com/user-attachments/assets/87f614f2-74d0-498b-a049-fc51c8b558cf" />
 
 **Inverter Chain:**
 
@@ -1578,6 +1676,9 @@ setplot dc1
 display
 .endc
 .end
+
+
+<img width="796" height="426" alt="image" src="https://github.com/user-attachments/assets/1b91cd08-1111-4370-8941-035dbd87fa69" />
 
 
 ### The snap shot of output window to observe device variation
